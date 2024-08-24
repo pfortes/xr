@@ -56,13 +56,13 @@ function DraggableCube() {
           return
  }
         isDraggingRef.current = true
-        meshRef.position.copy(e.point)
+        meshRef.current.position.copy(e.point)
  }}
       onPointerMove={(e) => {
         if (!isDraggingRef.current) {
           return
  }
-        meshRef.position.copy(e.point)
+        meshRef.current.position.copy(e.point)
  }}
       onPointerUp={(e) => (isDraggingRef.current = false)}
     >
